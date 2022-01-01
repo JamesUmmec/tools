@@ -57,6 +57,7 @@
         function removeNextLines() {
             let input = document.getElementById("input")
             input.innerText = input.innerText.replaceAll("\n", " ")
+            input.innerText = input.innerText.replaceAll("\t", "")
             input.innerText = input.innerText.replaceAll("  ", " ")
         }
 
